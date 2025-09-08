@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productividad - Elyon</title>
+    <style>
+        :root {
+            --color-primario: #E7D49E;
+            --color-secundario: #FFFDF7;
+            --color-texto: #333333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--color-secundario); color: var(--color-texto); }
+
+        header { background-color: #FFFDF7; padding: 15px 50px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+        header img { height: 50px; }
+        nav a { margin-left: 25px; text-decoration: none; font-weight: bold; color: #333333; transition: 0.3s; }
+        nav a:hover { color: #E7D49E; }
+
+        .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 50vh; text-align: center; background-color: #FFFFFF; padding: 0 20px; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 20px; color: var(--color-primario); }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+        .hero button { background-color: var(--color-primario); color: #333333; border: none; padding: 15px 30px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .hero button:hover { opacity: 0.8; }
+
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 60px 50px; }
+        .product-card { background-color: #FFFFFF; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-card h3 { margin-bottom: 10px; color: var(--color-primario); }
+        .product-card p { margin-bottom: 10px; }
+        .product-card a button { background-color: var(--color-primario); color: #333333; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .product-card a button:hover { opacity: 0.8; }
+
+        footer { background-color: var(--color-primario); color: var(--color-texto); text-align: center; padding: 20px; margin-top: 30px; }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; }
+            nav a { margin: 10px 10px 0 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/elyono.svg" alt="Logo Elyon">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productividad.html">Productividad</a>
+            <a href="diseno.html">Diseño</a>
+            <a href="gestion.html">Gestión</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Licencias de Seguridad y Antivirus</h1>
+        <p>Explora nuestras licencias de software para aumentar tu seguridad y mejorar la gestión de tu trabajo diario.</p>
+        <button onclick="location.href='index.html'">Volver al Inicio</button>
+    </section>
+
+    <section class="products">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <h3>AUTODESK AutoCad</h3>
+            <p>Software líder de diseño y dibujo técnico en 2D y 3D, utilizado por arquitectos, ingenieros y diseñadores.</p>
+            <p><strong>Precio:</strong> Q320 / Año </p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20comprar%20Microsoft%20365" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <h3>Canva Pro</h3>
+            <p>Plataforma de diseño gráfico profesional en línea que permite crear presentaciones, redes sociales, videos y material visual con herramientas avanzadas y recursos ilimitados.</p>
+            <p><strong>Precio:</strong> Q25 / Mes</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <h3>Filmora 13 Pro</h3>
+            <p>Software de edición de video profesional con funciones avanzadas, efectos, transiciones y herramientas de exportación para proyectos creativos de alta calidad.</p>
+            <p><strong>Precio:</strong> Q320 / Año</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Aquí puedes añadir más productos copiando la estructura de product-card -->
+    </section>
+
+    <footer>
+        &copy; 2025 Elyon. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

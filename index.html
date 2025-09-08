@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyon</title>
+    <style>
+        /* Colores principales */
+        :root {
+            --color-primario: #E7D49E;
+            --color-secundario: #FFFDF7;
+            --color-texto: #333333;
+        }
+
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-secundario);
+            color: var(--color-texto);
+        }
+
+        header {
+            background-color: #FFFDF7; /* Fondo claro para que el logo negro resalte */
+            padding: 15px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header img {
+            height: 50px; /* Aquí puedes agregar tu logo */
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333333; /* Texto oscuro para contraste */
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #E7D49E; /* Color secundario de la marca */
+        }
+
+        /* Hero section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+            background-color: #FFFFFF;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--color-primario);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .hero button, .contact button {
+            background-color: #E7D49E; /* Color de marca */
+            color: #333333; /* Contraste con el botón */
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            opacity: 0.8;
+        }
+
+        /* Sección de servicios */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 60px 50px;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--color-primario);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+        }
+
+        .card button {
+            margin-top: 15px;
+            background-color: var(--color-primario);
+            color: #333333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card button:hover {
+            opacity: 0.8;
+        }
+
+        /* Sobre nosotros */
+        .about {
+            background-color: var(--color-primario);
+            color: var(--color-texto);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .about h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Contacto */
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            background-color: var(--color-primario);
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact button:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-primario);
+            color: var(--color-texto);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 10px 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/elyono.svg" alt="Logo Elyon">
+        <nav>
+            <a href="#hero">Inicio</a>
+            <a href="#services">Servicios</a>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <h1>Bienvenido a Elyon</h1>
+        <p>Ofrecemos una amplia gama de licencias de software que incluyen aplicaciones de productividad, herramientas de diseño, programas de gestión empresarial, y más. Trabajamos con los principales proveedores del mercado para asegurarnos de que reciba productos originales y totalmente autorizados.</p>
+        <button onclick="location.href='conocenos.html'">Conócenos</button>
+    </section>
+    <section class="services" id="services">
+        <div class="card">
+            <h3>Productividad</h3>
+            <p>Licencias de suites de oficina, correo electrónico y colaboración en la nube para potenciar tu eficiencia diaria.</p>
+            <button onclick="location.href='productividad.html'">Ver más</button>
+        </div>
+        <div class="card">
+            <h3>Diseño y Creatividad</h3>
+            <p>Herramientas profesionales para edición gráfica, fotografía, animación y video que impulsan tu lado creativo.</p>
+            <button onclick="location.href='diseno.html'">Ver más</button>
+        </div>
+        <div class="card">
+            <h3>Seguridad</h3>
+            <p>Licencias especiales para seguridad de tus dispositivos, con VPN incluído y otros servicios.
+            </p>
+            <button onclick="location.href='gestion.html'">Ver más</button>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>Sobre Nosotros</h2>
+        <p> En Elyon nos dedicamos a brindar soluciones excepcionales que combinan innovación, calidad y compromiso. Nuestro equipo trabaja con pasión para garantizar que cada proyecto supere las expectativas de nuestros clientes y genere un impacto positivo en la comunidad. </p>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2025 Elyon. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

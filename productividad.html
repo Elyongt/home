@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productividad - Elyon</title>
+    <style>
+        :root {
+            --color-primario: #E7D49E;
+            --color-secundario: #FFFDF7;
+            --color-texto: #333333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--color-secundario); color: var(--color-texto); }
+
+        header { background-color: #FFFDF7; padding: 15px 50px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+        header img { height: 50px; }
+        nav a { margin-left: 25px; text-decoration: none; font-weight: bold; color: #333333; transition: 0.3s; }
+        nav a:hover { color: #E7D49E; }
+
+        .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 50vh; text-align: center; background-color: #FFFFFF; padding: 0 20px; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 20px; color: var(--color-primario); }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+        .hero button { background-color: var(--color-primario); color: #333333; border: none; padding: 15px 30px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .hero button:hover { opacity: 0.8; }
+
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 60px 50px; }
+        .product-card { background-color: #FFFFFF; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-card h3 { margin-bottom: 10px; color: var(--color-primario); }
+        .product-card p { margin-bottom: 10px; }
+        .product-card a button { background-color: var(--color-primario); color: #333333; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .product-card a button:hover { opacity: 0.8; }
+
+        footer { background-color: var(--color-primario); color: var(--color-texto); text-align: center; padding: 20px; margin-top: 30px; }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; }
+            nav a { margin: 10px 10px 0 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/elyono.svg" alt="Logo Elyon">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productividad.html">Productividad</a>
+            <a href="diseno.html">Diseño</a>
+            <a href="gestion.html">Gestión</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Software de Productividad</h1>
+        <p>Explora nuestras licencias de software para aumentar tu productividad y mejorar la gestión de tu trabajo diario.</p>
+        <button onclick="location.href='index.html'">Volver al Inicio</button>
+    </section>
+
+    <section class="products">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <h3>Microsoft 365</h3>
+            <p>Suite completa de oficina y colaboración en la nube.</p>
+            <p><strong>Precio:</strong> Q145 / Año </p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20comprar%20Microsoft%20365" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <h3>Office 2024</h3>
+            <p>Última versión de la suite de productividad de Microsoft, con aplicaciones de escritorio, herramientas de colaboración y servicios en la nube integrados.</p>
+            <p><strong>Precio:</strong> Q145 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <h3>Office 2021</h3>
+            <p>Versión perpetua de la suite de oficina clásica de Microsoft, incluye Word, Excel, PowerPoint y Outlook.</p>
+            <p><strong>Precio:</strong> Q130 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <h3>Office 2019</h3>
+            <p>Suite de productividad de Microsoft con mejoras en seguridad, rendimiento y herramientas avanzadas de colaboración.</p>
+            <p><strong>Precio:</strong> Q125 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product-card">
+            <h3>Office 2016</h3>
+            <p>Versión clásica de Microsoft Office con aplicaciones de productividad esenciales y funciones de colaboración básicas.</p>
+            <p><strong>Precio:</strong> Q125 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+         <!-- Producto 6 -->
+        <div class="product-card">
+            <h3>Windows 10 Pro</h3>
+            <p>Sistema operativo profesional de Microsoft con seguridad avanzada, gestión de dispositivos y soporte para empresas.</p>
+            <p><strong>Precio:</strong> Q125 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+         <!-- Producto 7 -->
+        <div class="product-card">
+            <h3>Windows 11 Pro</h3>
+            <p>Sistema operativo moderno de Microsoft con interfaz renovada, productividad optimizada y funciones de seguridad avanzadas.</p>
+            <p><strong>Precio:</strong> Q135 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+         <!-- Producto 8 -->
+        <div class="product-card">
+            <h3>Microsoft Visio 2019</h3>
+            <p>Herramienta profesional para diagramación y visualización de procesos, organigramas y flujos de trabajo.</p>
+            <p><strong>Precio:</strong> Q145 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="product-card">
+            <h3>Microsoft Project 2019</h3>
+            <p>Software de gestión de proyectos que permite planificar, supervisar y controlar recursos y tareas de manera eficiente.</p>
+            <p><strong>Precio:</strong> Q145 / Permanente</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="product-card">
+            <h3>MyRecover Pro</h3>
+            <p>Herramienta avanzada de recuperación de datos que permite restaurar archivos perdidos de discos duros, SSD y memorias externas.</p>
+            <p><strong>Precio:</strong> Q370 / Año</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+          <!-- Producto 11 -->
+        <div class="product-card">
+            <h3>FlexiPDF Editor</h3>
+            <p>Editor de PDF profesional que permite crear, editar, convertir y proteger documentos PDF de manera sencilla.</p>
+            <p><strong>Precio:</strong> Q325 / Año</p>
+            <a href="https://wa.me/50247375980?text=Hola%20quiero%20Comprar: (  )" target="_blank"><button>Comprar</button></a>
+        </div>
+
+        <!-- Aquí puedes añadir más productos copiando la estructura de product-card -->
+    </section>
+
+    <footer>
+        &copy; 2025 Elyon. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
